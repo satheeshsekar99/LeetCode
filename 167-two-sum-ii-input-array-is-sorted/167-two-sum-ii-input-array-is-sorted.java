@@ -6,7 +6,7 @@ class Solution {
             int complement = target - numbers[i];
             if(map.containsKey(complement))
             {
-                return new int[]{Math.min(map.get(complement)+1, i+1), Math.max(map.get(complement)+1, i+1)};
+                return new int[]{map.get(complement)+1, i+1};
             }
             else
             {
